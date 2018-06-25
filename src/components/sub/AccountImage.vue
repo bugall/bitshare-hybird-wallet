@@ -1,6 +1,6 @@
 <template>
     <canvas v-if="!imgShow" ref="canvas" :style="{width:size,height:size}" :width="size * 2" :height="size * 2" :data-jdenticon-hash="hash"></canvas>
-    <img v-else :src="imgSrc" :style="{width:size,height:size}" :width="size * 2" :height="size * 2"/>
+    <div class="icon-idac" v-else/>
 </template>
 <script>
     import jdenticon from 'jdenticon';
@@ -38,13 +38,10 @@
         },
         methods: {
             drawCanvas () {
-                if ((this.account === 'IDAC') || (this.account === 'GXC')) {
+                if (this.account === 'IDAC') {
                     this.imgShow = true;
                     if (this.account === 'IDAC') {
-                        this.imgSrc = 'https://gxs-wallet.oss-cn-shanghai.aliyuncs.com/symbols/gxs.png';
-                    }
-                    if (this.account === 'GXC') {
-                        this.imgSrc = 'https://gxs-wallet.oss-cn-shanghai.aliyuncs.com/symbols/gxc.png';
+                        this.imgSrc = '';
                     }
                 } else {
                     this.imgShow = false;
@@ -68,3 +65,14 @@
         }
     };
 </script>
+
+<style scoped="">
+    .icon-idac {
+        background-image: url('../../../static/logo.png');
+        background-repeat:no-repeat;
+        background-size:100% 100%;
+        -moz-background-size:100% 100%;
+        height: 27px;
+        width: 27px;
+    }
+</style>

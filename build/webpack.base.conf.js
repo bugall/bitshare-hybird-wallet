@@ -28,7 +28,7 @@ module.exports = {
   },
   plugins: [
     new FaviconWebpackPlugin({
-      logo:path.resolve(__dirname,'../static/logo1024.png'),
+      logo:path.resolve(__dirname,'../static/logo.png'),
       icons: {
         android: true,
         appleIcon: true,

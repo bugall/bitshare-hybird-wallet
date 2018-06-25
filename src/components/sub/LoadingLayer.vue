@@ -1,13 +1,34 @@
 <template>
-    <div class="loading-layer">
-      <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+    <div class="loading-layer loading-background">
+        <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
     </div>
 </template>
 <script>
-    export default { };
+    import {
+        mapGetters
+    } from 'vuex';
+    export default {
+        // props: {
+        //     loading: 'String'
+        // },
+        computed: {
+            ...mapGetters({
+                loading: 'loading'
+            })
+        },
+        destroyed () {
+            console.log('Layer distroy');
+        }
+    };
 </script>
 <style lang="scss">
     @import '../../assets/styles/theme.scss';
+    .loading-background {
+        background-image: url('../../../static/app.png');
+        background-repeat:no-repeat;
+        background-size:100% 100%;
+        -moz-background-size:100% 100%;
+    }
     .lds-ellipsis {
       display: inline-block;
       position: relative;

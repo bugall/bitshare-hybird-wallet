@@ -30,6 +30,16 @@
                             </div>
                         </router-link>
                     </li>
+                    <li>
+                        <router-link :to="link('/wallet-create-step-1')" class="item-content">
+                            <div class="item-media">
+                                <i class="gxicon gxicon-chevron-right"></i>
+                            </div>
+                            <div class="item-inner">
+                                <div class="item-title login-out">退出登录</div>
+                            </div>
+                        </router-link>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -45,6 +55,9 @@
     };
 </script>
 <style scoped="" lang="scss">
+    .login-out {
+        color: red;
+    }
     .panel-left {
         background: #ffffff;
         color: #666666;
