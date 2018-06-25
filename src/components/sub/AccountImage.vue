@@ -68,7 +68,7 @@
 
 <style scoped="">
     .icon-idac {
-        background-image: url('../../../static/logo.png');
+        background-image: url('/static/logo.png');
         background-repeat:no-repeat;
         background-size:100% 100%;
         -moz-background-size:100% 100%;

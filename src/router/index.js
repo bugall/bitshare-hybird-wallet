@@ -10,13 +10,19 @@ import WalletImportAccount from '@/components/WalletImportAccount';
 import WalletImportSuccess from '@/components/WalletImportSuccess';
 import WalletBackupIndex from '@/components/WalletBackupIndex';
 import WalletBackupDetail from '@/components/WalletBackupDetail';
+// import TradeDetail from '@/components/TradeDetail';
 import Transfer from '@/components/Transfer';
 import TransferSuccess from '@/components/TransferSuccess';
+// import Disclaimer from '@/components/Disclaimer';
+// import LoyaltyProgram from '@/components/LoyaltyProgram';
+// import LoyaltyProgramDetail from '@/components/LoyaltyProgramDetail';
+
 import store from '@/vuex/store';
 import connect from '@/common/connect';
 import cordovaLoader from '@/common/cordovaLoader';
 import {bak_wallet, get_wallets, merge_wallets} from '@/services/WalletService';
 import RouterTransition from '@/plugins/RouterTransition';
+// import RealtimeQuotations from '@/components/RealtimeQuotations';
 
 RouterTransition.use(store, Router, {
     moduleName: 'route',
@@ -132,6 +138,18 @@ let router = new Router({
             name: 'BackupDetail',
             component: WalletBackupDetail
         }
+        //     name: 'LoyaltyProgramDetail',
+        //     component: LoyaltyProgramDetail
+        // },
+        // {
+        //     path: '/realtime-quotations/:exchange_name/:exchange_symbol',
+        //     meta: {
+        //         title: '实时行情'
+        //     },
+        //     name: 'RealtimeQuotations',
+        //     component: RealtimeQuotations
+        // }
+
     ]
 });
 
