@@ -1,0 +1,66 @@
+.button-gxb{
+  font-size: .75rem;
+  color:$THEME_BUTTON_TEXT_COLOR;
+  border-color:$THEME_BUTTON_BG_COLOR;
+  background: $THEME_BUTTON_BG_COLOR;
+  padding:0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2.2rem;
+  height:2.2rem;
+  &:active{
+    color: $THEME_BUTTON_TEXT_COLOR;
+    background: darken($THEME_BUTTON_BG_COLOR,2%);
+  }
+  &.disabled{
+    color:#fff !important;
+    background:#c8c9cb;
+  }
+  .line-scale-pulse-out > div {
+    background-color: #fff;
+    width: 3px;
+    height: 18px;
+    margin: -2px -1px;
+  }
+}
+
+.button-gxb-secondary{
+  font-size: .75rem;
+  color:$THEME_BUTTON_TEXT_COLOR;
+  border-color:$THEME_BUTTON_SECONDARY_BG_COLOR;
+  background: $THEME_BUTTON_SECONDARY_BG_COLOR;
+  padding:0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: .15rem;
+  border-radius: 2.2rem;
+  height:2.2rem;
+  &:active{
+    color: $THEME_BUTTON_SECONDARY_BG_COLOR;
+    background: darken($THEME_BUTTON_SECONDARY_BG_COLOR,2%);
+  }
+  &.disabled{
+    color:#fff !important;
+    background:#c8c9cb;
+  }
+}
+
+.buttons-tab .button {
+  font-size: .75rem;
+}
+
+.buttons-tab .button.active {
+  color: $THEME_BUTTON_BG_COLOR;
+  border-color: $THEME_BUTTON_BG_COLOR;
+}
+
+.button-disabled {
+  color: #fff;
+  border-color:#c8c9cb;
+  background-color: #c8c9cb;
+  &:active{
+    background: darken(#c8c9cb,2%);
+  }
+}
