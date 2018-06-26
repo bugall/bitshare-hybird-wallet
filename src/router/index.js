@@ -125,6 +125,7 @@ const inWhiteList = (component) => {
 
 router.beforeEach((to, from, next) => {
     let platform = (from.name ? from.query.platform : to.query.platform) || 'browser';
+
     to.query.platform = platform;
     let isNative = platform == 'ios' || platform == 'android';
     let version = from.query.version || to.query.version;
