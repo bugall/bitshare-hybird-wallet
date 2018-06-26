@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
-    "start": "PORT=80 && node server/app.js",
+    "start": "PORT=80 node server/app.js",
     "build": "node build/build.js",
     "build:prod": "prod=1 node build/build.js",
     "lint": "eslint --ext .js,.vue src"
