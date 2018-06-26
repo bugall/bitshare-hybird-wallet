@@ -10,7 +10,7 @@ module.exports = merge(prodEnv, {
 
     witnesses: JSON.stringify(['ws://39.104.105.147:8090']),
     faucet_addr: '"http://39.104.25.21:3000"'
-    // __SERVICE__:'"https://walletgateway.gxb.io"',
-    // witnesses:JSON.stringify(["wss://node1.gxb.io","wss://node5.gxb.io","wss://node8.gxb.io","wss://node11.gxb.io","wss://node15.gxb.io","wss://node16.gxb.io","wss://node17.gxb.io"]),
-    // faucet_addr:'"https://opengateway.gxb.io"'
+    // __SERVICE__:'"https://walletgateway.IDAC.io"',
+    // witnesses:JSON.stringify(["wss://node1.IDAC.io","wss://node5.IDAC.io","wss://node8.IDAC.io","wss://node11.IDAC.io","wss://node15.IDAC.io","wss://node16.IDAC.io","wss://node17.IDAC.io"]),
+    // faucet_addr:'"https://opengateway.IDAC.io"'
 });

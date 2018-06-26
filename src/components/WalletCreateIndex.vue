@@ -11,12 +11,12 @@
                     </div>
                     <div class="content-block block-button">
                         <p>
-                            <router-link :to="link('/wallet-import',{from:$route.fullPath})" class="button button-gxb-secondary">
+                            <router-link :to="link('/wallet-import',{from:$route.fullPath})" class="button button-idac-secondary">
                                 {{$t('wallet_create.index.button_import')}}
                             </router-link>
                         </p>
                         <p>
-                            <router-link :to="link('/wallet-create-step-1',{from:$route.fullPath})" class="button button-gxb">
+                            <router-link :to="link('/wallet-create-step-1',{from:$route.fullPath})" class="button button-idac">
                                 {{$t('wallet_create.index.button_create')}}
                             </router-link>
                         </p>

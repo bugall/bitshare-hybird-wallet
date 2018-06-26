@@ -99,7 +99,7 @@
                 </div>
                 <div class="button-block content-block ">
                     <p>
-                        <a @click="onSubmit" href="javascript:;" class="button button-gxb" :class="{disabled:!submitEnable}">{{$t('transfer.send')}}</a>
+                        <a @click="onSubmit" href="javascript:;" class="button button-idac" :class="{disabled:!submitEnable}">{{$t('transfer.send')}}</a>
                     </p>
                 </div>
             </div>
@@ -124,8 +124,6 @@
     import filters from '@/filters';
     import PasswordConfirm from './sub/PasswordConfirm.vue';
     import TransferConfirm from './sub/TransferConfirm.vue';
-    import {get_need_memo_accounts} from '@/services/MarketService';
-    import errorHandler from '@/common/errorHandler';
     export default {
         filters,
         data () {
@@ -176,14 +174,6 @@
             this.fetch_balance();
             $(this.$el).on('refresh', '.pull-to-refresh-content', (e) => {
                 this.fetch_balance();
-            });
-            get_need_memo_accounts().then((resp) => {
-                let result = resp.data;
-                if (result && result.data) {
-                    this.needMemoAccounts = result.data;
-                }
-            }).catch((ex) => {
-                errorHandler(ex);
             });
         },
         methods: {

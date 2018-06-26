@@ -1,17 +1,17 @@
 @font-face {
-  font-family: 'gxb';
-  src:  url('fonts/gxb.eot?4633h0');
-  src:  url('fonts/gxb.eot?4633h0#iefix') format('embedded-opentype'),
-    url('fonts/gxb.ttf?4633h0') format('truetype'),
-    url('fonts/gxb.woff?4633h0') format('woff'),
-    url('fonts/gxb.svg?4633h0#gxb') format('svg');
+  font-family: 'idac';
+  src:  url('fonts/idac.eot?4633h0');
+  src:  url('fonts/idac.eot?4633h0#iefix') format('embedded-opentype'),
+    url('fonts/idac.ttf?4633h0') format('truetype'),
+    url('fonts/idac.woff?4633h0') format('woff'),
+    url('fonts/idac.svg?4633h0#idac') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
 [class^="gxicon-"], [class*=" gxicon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'gxb' !important;
+  font-family: 'idac' !important;
   speak: none;
   font-style: normal;
   font-weight: normal;

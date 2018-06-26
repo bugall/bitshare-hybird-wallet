@@ -64,7 +64,7 @@
                 
                 <div class="content-block button-block">
                     <p>
-                        <a href="javascript:;" @click="onSubmit" class="button button-gxb" :class="{disabled:!submitEnable}">确认导入</a>
+                        <a href="javascript:;" @click="onSubmit" class="button button-idac" :class="{disabled:!submitEnable}">确认导入</a>
                     </p>
                 </div>
             </div>

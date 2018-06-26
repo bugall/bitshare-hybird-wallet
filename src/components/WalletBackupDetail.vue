@@ -15,7 +15,7 @@
                     </div>
                     <p class="tip-error text-center" v-if="error.common">{{error.common}}</p>
                     <p>
-                        <a class="button-gxb" v-if="!wifKey" @click="unlock">{{$t('wallet_backup.detail.unlock')}}</a>
+                        <a class="button-idac" v-if="!wifKey" @click="unlock">{{$t('wallet_backup.detail.unlock')}}</a>
                     </p>
                 </div>
                 <ul class="tips color-danger">
@@ -28,10 +28,10 @@
                 </ul>
                 <div class="button-block">
                     <p v-if="isNative&&wifKey">
-                        <a href="javascript:;" @click="copyKey()" class="button button-gxb" :class="{disabled:keyCopied}">{{keyCopied ? $t('wallet_backup.detail.copied') : $t('wallet_backup.detail.copy')}}</a>
+                        <a href="javascript:;" @click="copyKey()" class="button button-idac" :class="{disabled:keyCopied}">{{keyCopied ? $t('wallet_backup.detail.copied') : $t('wallet_backup.detail.copy')}}</a>
                     </p>
                     <p v-if="wifKey">
-                        <a href="javascript:;" @click="confirm(link('/'))" class="button button-gxb">{{$t('wallet_backup.detail.go_back')}}</a>
+                        <a href="javascript:;" @click="confirm(link('/'))" class="button button-idac">{{$t('wallet_backup.detail.go_back')}}</a>
                     </p>
                 </div>
             </div>

@@ -1,6 +1,6 @@
 # idac-wallet
 
-> IDAC Wallet for mobile
+> idac wallet for mobile
 
 ## Build Setup
 

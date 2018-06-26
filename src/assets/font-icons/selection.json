@@ -729,7 +729,7 @@
   ],
   "height": 1024,
   "metadata": {
-    "name": "gxb"
+    "name": "idac"
   },
   "preferences": {
     "showGlyphs": true,
@@ -740,7 +740,7 @@
     "fontPref": {
       "prefix": "gxicon-",
       "metadata": {
-        "fontFamily": "gxb",
+        "fontFamily": "idac",
         "majorVersion": 1,
         "minorVersion": 0
       },

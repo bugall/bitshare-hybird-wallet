@@ -49,11 +49,11 @@
                 <p class="tip-error text-center" v-if="error.common">{{error.common}}</p>
                 <div class="content-block button-block">
                     <p>
-                        <router-link :to="linkBackupKey" class="button button-gxb">{{$t('wallet_backup.index.button_backup')}}
+                        <router-link :to="linkBackupKey" class="button button-idac">{{$t('wallet_backup.index.button_backup')}}
                         </router-link>
                     </p>
                     <p>
-                        <a href="javascript:;" class="button button-gxb button-disabled" @click="delWallet">{{$t('wallet_backup.index.button_remove')}}</a>
+                        <a href="javascript:;" class="button button-idac button-disabled" @click="delWallet">{{$t('wallet_backup.index.button_remove')}}</a>
                     </p>
                 </div>
             </div>

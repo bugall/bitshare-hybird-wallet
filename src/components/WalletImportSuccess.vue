@@ -13,7 +13,7 @@
                         <p class="tip-alert text-center">{{$t('wallet_import.success.tip2')}}</p>
                         <div class="content-block block-button">
                             <p>
-                                <router-link :to="link('/wallet-backup',{account:$route.query.account})" replace class="button button-gxb">{{$t('wallet_create.success.backup_wallet')}}</router-link>
+                                <router-link :to="link('/wallet-backup',{account:$route.query.account})" replace class="button button-idac">{{$t('wallet_create.success.backup_wallet')}}</router-link>
                             </p>
                             <p class="text-center">
                                 <router-link :to="link('/')" replace class="link-green">{{$t('wallet_create.success.detail')}}</router-link>

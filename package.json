@@ -1,8 +1,8 @@
 {
-  "name": "gxb-mobile-wallet",
+  "name": "idac-mobile-wallet",
   "version": "1.0.0",
-  "description": "gxb wallet for mobile",
-  "author": "lanhaoxiang@gxb.io",
+  "description": "idac wallet for mobile",
+  "author": "bugall@idac.io",
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",

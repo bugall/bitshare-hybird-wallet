@@ -120,7 +120,6 @@
         fetch_account_balances, fetch_reference_accounts, get_assets_by_ids, get_wallet_index, get_wallets,
         set_wallet_index, set_wallets
     } from '@/services/WalletService';
-    import {get_market_asset_price} from '@/services/MarketService';
     import filters from '@/filters';
 
     export default {
@@ -198,7 +197,7 @@
                         return get_assets_by_ids(asset_ids);
                     }).then(assets => {
                         console.log('assets:', assets);
-                        let priceSymbol = '';
+                        let priceSymbol = 0;
                         assets.forEach(asset => {
                             assetMap[asset.id] = asset;
                             priceSymbol += asset.symbol + ',';
@@ -214,7 +213,7 @@
                                 value: 0
                             };
                         });
-                        return get_market_asset_price(priceSymbol);
+                        return priceSymbol;
                     }).then(prices => {
                         wallet.totalValue = 0;
                         prices.forEach(price => {

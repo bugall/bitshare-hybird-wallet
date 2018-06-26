@@ -38,7 +38,7 @@
             <div class="content-block button-block">
                 <p class="tip-error text-center" v-if="error.transfer">{{error.transfer}}</p>
                 <p>
-                    <a href="javascript:;" @click="onConfirm" class="button button-gxb">
+                    <a href="javascript:;" @click="onConfirm" class="button button-idac">
                         <div class="line-scale-pulse-out" v-if="submitting">
                             <div></div>
                             <div></div>

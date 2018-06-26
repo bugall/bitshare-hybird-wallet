@@ -41,7 +41,7 @@
                 </div>
                 <div class="content-block button-block">
                     <p>
-                        <a href="javascript:;" @click="onSubmit" class="button button-gxb" :class="{disabled:!isCommitEnable}">{{$t('wallet_create.step2.done')}}</a>
+                        <a href="javascript:;" @click="onSubmit" class="button button-idac" :class="{disabled:!isCommitEnable}">{{$t('wallet_create.step2.done')}}</a>
                     </p>
                 </div>
             </div>

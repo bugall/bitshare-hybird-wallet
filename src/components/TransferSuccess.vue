@@ -20,7 +20,7 @@
                 </div>
                 <div class="content-block button-block">
                     <p>
-                        <router-link :to="$route.query.from||link('/transfer')" replace class="button button-gxb">{{$t('transfer.success.done')}}</router-link>
+                        <router-link :to="$route.query.from||link('/transfer')" replace class="button button-idac">{{$t('transfer.success.done')}}</router-link>
                     </p>
                 </div>
             </div>

@@ -56,5 +56,8 @@ export default {
                 resolve(result);
             };
         });
+    },
+    clean: function () {
+        this.indexedDB.clear();
     }
 };

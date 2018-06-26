@@ -16,6 +16,10 @@ export const get_item = (key) => {
     }
 };
 
+export const del_all = () => {
+    localStorage.clear();
+};
+
 export const accMult = (arg1, arg2) => {
     let m = 0;
     let s1 = arg1.toString();

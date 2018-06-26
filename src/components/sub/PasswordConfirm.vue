@@ -20,7 +20,7 @@
                         </ul>
                     </div>
                     <div class="password-confirm-btn">
-                        <a href="javascript:;" @click="onPasswordConfirm" class="button button-gxb">
+                        <a href="javascript:;" @click="onPasswordConfirm" class="button button-idac">
                             <div class="line-scale-pulse-out" v-if="submitting">
                                 <div></div>
                                 <div></div>

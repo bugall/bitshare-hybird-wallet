@@ -8,14 +8,8 @@ import WalletCreateSuccess from '@/components/WalletCreateSuccess';
 import WalletImport from '@/components/WalletImport';
 import WalletImportAccount from '@/components/WalletImportAccount';
 import WalletImportSuccess from '@/components/WalletImportSuccess';
-import WalletBackupIndex from '@/components/WalletBackupIndex';
-import WalletBackupDetail from '@/components/WalletBackupDetail';
-// import TradeDetail from '@/components/TradeDetail';
 import Transfer from '@/components/Transfer';
 import TransferSuccess from '@/components/TransferSuccess';
-// import Disclaimer from '@/components/Disclaimer';
-// import LoyaltyProgram from '@/components/LoyaltyProgram';
-// import LoyaltyProgramDetail from '@/components/LoyaltyProgramDetail';
 
 import store from '@/vuex/store';
 import connect from '@/common/connect';
@@ -121,35 +115,7 @@ let router = new Router({
             },
             name: 'TransferSuccess',
             component: TransferSuccess
-        },
-        {
-            path: '/wallet-backup',
-            meta: {
-                title: '钱包备份'
-            },
-            name: 'BackupIndex',
-            component: WalletBackupIndex
-        },
-        {
-            path: '/wallet-backup-detail',
-            meta: {
-                title: '钱包备份'
-            },
-            name: 'BackupDetail',
-            component: WalletBackupDetail
         }
-        //     name: 'LoyaltyProgramDetail',
-        //     component: LoyaltyProgramDetail
-        // },
-        // {
-        //     path: '/realtime-quotations/:exchange_name/:exchange_symbol',
-        //     meta: {
-        //         title: '实时行情'
-        //     },
-        //     name: 'RealtimeQuotations',
-        //     component: RealtimeQuotations
-        // }
-
     ]
 });
 

@@ -31,14 +31,14 @@
                         </router-link>
                     </li>
                     <li>
-                        <router-link :to="link('/wallet-create-step-1')" class="item-content">
+                        <div class="item-content">
                             <div class="item-media">
                                 <i class="gxicon gxicon-chevron-right"></i>
                             </div>
-                            <div class="item-inner">
+                            <div class="item-inner" @click="loginOut">
                                 <div class="item-title login-out">退出登录</div>
                             </div>
-                        </router-link>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -46,10 +46,17 @@
     </div>
 </template>
 <script>
+    import {
+        clean_wallet
+    } from '@/services/WalletService';
     export default {
         methods: {
             open () {
                 $.openPanel(this.$refs.panel);
+            },
+            loginOut () {
+                clean_wallet();
+                this.$router.replace({ path: this.link('/wallet-create') });
             }
         }
     };
