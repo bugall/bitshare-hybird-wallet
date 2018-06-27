@@ -24,7 +24,6 @@
 <style lang="scss">
     @import '../../assets/styles/theme.scss';
     .loading-background {
-        background-image: url('/static/app.png');
         background-repeat:no-repeat;
         background-size:100% 100%;
         -moz-background-size:100% 100%;
