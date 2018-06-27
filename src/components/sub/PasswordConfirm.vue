@@ -21,14 +21,8 @@
                     </div>
                     <div class="password-confirm-btn">
                         <a href="javascript:;" @click="onPasswordConfirm" class="button button-idac">
-                            <div class="line-scale-pulse-out" v-if="submitting">
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                            </div>
                             <span v-if="!submitting">{{$t('transfer.next')}}</span>
+                            <span v-else>验证中...</span>
                         </a>
                     </div>
                 </div>

@@ -16,6 +16,7 @@ import connect from '@/common/connect';
 import cordovaLoader from '@/common/cordovaLoader';
 import {bak_wallet, get_wallets, merge_wallets} from '@/services/WalletService';
 import RouterTransition from '@/plugins/RouterTransition';
+import uaParser from 'ua-parser-js';
 // import RealtimeQuotations from '@/components/RealtimeQuotations';
 
 RouterTransition.use(store, Router, {
@@ -125,10 +126,13 @@ const inWhiteList = (component) => {
 
 router.beforeEach((to, from, next) => {
     let platform = 'browser';
-    if (window.isIos) {
+    console.log(uaParser(navigator.appVersion));
+    if (uaParser(navigator.appVersion).os.name === 'Android') {
+        platform = 'android';
+    };
+    if (uaParser(navigator.appVersion).os.name === 'iOS') {
         platform = 'ios';
-    }
-
+    };
     to.query.platform = platform;
     let isNative = platform == 'ios' || platform == 'android';
     let version = from.query.version || to.query.version;

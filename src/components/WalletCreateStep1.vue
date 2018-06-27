@@ -189,7 +189,7 @@
                                 });
                             });
                     } else {
-                        console.error(ex);
+                        this.submitting = false;
                         errorHandler(ex, this.$t('wallet_create.step2.error.account_create_failed'));
                     }
                 });
@@ -201,6 +201,7 @@
                         this.submitting = false;
                         $.hidePreloader();
                         if (account) {
+                            this.submitting = false;
                             this.error = this.$t('wallet_create.step1.error.account_already_exist');
                         } else {
                             this.register();

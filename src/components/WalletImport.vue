@@ -7,7 +7,7 @@
             </header>
             <div>
                 <nav class="bar bar-tab bar-text-size">
-                    <router-link replace :to="link('/wallet-import',{from:$route.fullPath})" class="tab-item external router-link-exact-active">
+                    <router-link replace :to="link('/wallet-import',{from:$route.fullPath, animate: false})" class="tab-item external router-link-exact-active">
                         <span class="tab-label x1">私钥导入</span>
                     </router-link>
 

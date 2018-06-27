@@ -248,8 +248,10 @@
             },
             openQRScaner () {
                 let self = this;
+                console.log(this.isNative, 'is native');
                 if (this.isNative) {
                     cordova.exec(function (result) {// eslint-disable-line
+                        console.log('result', '#########', result);
                         let query = {
                             to: result
                         };

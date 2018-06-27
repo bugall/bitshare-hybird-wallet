@@ -39,12 +39,13 @@
                 <p class="tip-error text-center" v-if="error.transfer">{{error.transfer}}</p>
                 <p>
                     <a href="javascript:;" @click="onConfirm" class="button button-idac">
-                        <div class="line-scale-pulse-out" v-if="submitting">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
+                        <div class="loading" v-if="submitting">
+                            <div class="lds-ellipsis">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
                         </div>
                         <span v-if="!submitting">{{$t('transfer.send')}}</span>
                     </a>
@@ -154,6 +155,16 @@
     };
 </script>
 <style lang="scss" scoped>
+    .loading {
+        height: 100%;
+        left:0;
+        top:0;
+        background: #4e5b61;
+        z-index: 99;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .asset {
         font-family: bebas;
         font-size: 1.1rem;
