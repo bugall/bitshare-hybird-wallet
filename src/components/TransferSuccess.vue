@@ -45,7 +45,6 @@
     .content {
         background: #fff;
     }
-
     .center-content {
         margin-top: 3rem;
         align-items: flex-end;

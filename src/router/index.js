@@ -8,6 +8,8 @@ import WalletCreateSuccess from '@/components/WalletCreateSuccess';
 import WalletImport from '@/components/WalletImport';
 import WalletImportAccount from '@/components/WalletImportAccount';
 import WalletImportSuccess from '@/components/WalletImportSuccess';
+import WalletBackupDetail from '@/components/WalletBackupDetail';
+import WalletBackupIndex from '@/components/WalletBackupIndex';
 import Transfer from '@/components/Transfer';
 import TransferSuccess from '@/components/TransferSuccess';
 
@@ -17,7 +19,6 @@ import cordovaLoader from '@/common/cordovaLoader';
 import {bak_wallet, get_wallets, merge_wallets} from '@/services/WalletService';
 import RouterTransition from '@/plugins/RouterTransition';
 import uaParser from 'ua-parser-js';
-// import RealtimeQuotations from '@/components/RealtimeQuotations';
 
 RouterTransition.use(store, Router, {
     moduleName: 'route',
@@ -116,6 +117,22 @@ let router = new Router({
             },
             name: 'TransferSuccess',
             component: TransferSuccess
+        },
+        {
+            path: '/wallet-backup',
+            meta: {
+                title: '钱包备份'
+            },
+            name: 'BackupIndex',
+            component: WalletBackupIndex
+        },
+        {
+            path: '/wallet-backup-detail',
+            meta: {
+                title: '钱包备份'
+            },
+            name: 'BackupDetail',
+            component: WalletBackupDetail
         }
     ]
 });

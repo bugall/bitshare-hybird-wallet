@@ -213,12 +213,10 @@ const set_wallet_native = (wallets) => {
     return new Promise((resolve, reject) => {
         let query = util.query2Obj(location.hash);
         let pluginName = 'KV';
-        if (query.platform === 'platform') {
+        if (query.platform === 'browser') {
             pluginName = 'AppConfig';
         }
-        console.log('rRRRRRRRR', pluginName, query.platform);
         cordova.exec(function () { //eslint-disable-line
-            console.log('wallets have been save to native storage successfully');
             resolve();
         }, function () {
             reject();
@@ -234,12 +232,10 @@ const get_wallet_native = () => {
     return new Promise((resolve, reject) => {
         let query = util.query2Obj(location.hash);
         let pluginName = 'KV';
-        if (query.platform === 'platform') {
+        if (query.platform === 'browser') {
             pluginName = 'AppConfig';
         }
-        console.log('$$$$$$$$$', pluginName, query.platform);
         cordova.exec(function (result) { //eslint-disable-line
-            console.log('wallets from native storage:', result);
             let wallets_str = ((result && result instanceof String) ? result : '[]') || '[]';
             let wallets = JSON.parse(wallets_str);
             resolve(wallets);
