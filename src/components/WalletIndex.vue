@@ -1,7 +1,7 @@
 <template>
     <div class="page-group">
         <div class="page" id="page-wallet-index">
-            <div ref="bar" class="bar bar-nav buttons-fixed" style="background: rgba(37, 40, 113, 0)">
+            <div ref="bar" class="bar bar-nav buttons-absolute" style="background: rgba(37, 40, 113, 0)">
                 <a href="javascript:;" class="icon gxicon gxicon-user pull-left" @click="openPanel"></a>
                 <a v-if="isNative" href="javascript:;" class="icon gxicon gxicon-scan pull-right" @click="openQRScaner">
                     <input ref="qrfile" @change="onFileUpload" v-if="!isNative" type="file" class="file-selector"/>
@@ -415,7 +415,7 @@
         }
     }
 
-    .bar-nav.buttons-fixed .icon {
+    .bar-nav.buttons-absolute .icon {
         font-size: 1.2rem;
         color: #fff;
     }

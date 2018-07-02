@@ -415,7 +415,9 @@ const import_account = (wifKey, password) => {
                 throw new Error(i18n.t('wallet_import.error.account_not_found'));
             }
         }).then((account_ids) => {
+            console.log(account_ids);
             return Apis.instance().db_api().exec('get_objects', [account_ids]).then((accounts) => {
+                console.log(accounts);
                 if (accounts.length > 0) {
                     let wallets = get_wallets();
                     accounts.forEach((account) => {

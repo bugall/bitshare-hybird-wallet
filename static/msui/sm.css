@@ -2406,6 +2406,11 @@ input[type="button"].button {
   z-index: 99;
   width: 100%;
 }
+.buttons-absolute {
+  position: absolute;
+  z-index: 99;
+  width: 100%;
+}
 /* === Tabs === */
 .tabs .tab {
   display: none;
